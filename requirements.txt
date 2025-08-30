@@ -1,0 +1,18 @@
+# Requirements pour serveur MCP ECCBC - Python 3.13.0
+# Framework MCP pour Claude Desktop
+mcp>=1.13.0
+
+# Client HTTP pour appels API
+httpx>=0.27.0
+
+# Validation de données
+pydantic>=2.10.0
+
+# Variables d'environnement
+python-dotenv>=1.0.1
+
+# Support JSON optimisé (optionnel)
+orjson>=3.10.0
+
+# Logging structuré (optionnel)
+structlog>=24.0.0
