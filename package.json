@@ -1,0 +1,26 @@
+{
+  "name": "eccbc-mcp-server",
+  "version": "1.0.0",
+  "description": "Serveur MCP pour ECCBC WhatsApp AI B2B",
+  "type": "module",
+  "main": "dist/eccbc-mcp-server.js",
+  "bin": {
+    "eccbc-mcp-server": "dist/eccbc-mcp-server.js"
+  },
+  "scripts": {
+    "dev": "tsx eccbc-mcp-server.ts",
+    "build": "tsc",
+    "start": "node dist/eccbc-mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.11",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
