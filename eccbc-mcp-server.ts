@@ -447,48 +447,89 @@ class ECCBCMCPServer {
     private getDarijaResource(): string {
         return `=== GUIDE DARIJA ECCBC ===
 
-PRODUITS:
+PRODUITS PRINCIPAUX:
 • كوكا / كوكا كولا = Coca-Cola  
 • فانتا = Fanta
 • سبرايت = Sprite
 • الحمرا = La rouge (Coca-Cola)
 • الصفرا = La jaune (Fanta citron)
 • البرتقالية = L'orange (Fanta orange)
+• الزرقا = La bleue (Pepsi)
 
 QUANTITÉS:
 • واحد=1, جوج=2, تلاتة=3, ربعة=4, خمسة=5
 • ستة=6, سبعة=7, تمنية=8, تسعة=9, عشرة=10
 • صندوق/صناديق = caisse(s)
+• دزينة = douzaine
+• نص دزينة = demi-douzaine
 
-EXPRESSIONS:
+EXPRESSIONS COURANTES:
 • بغيت = Je veux
 • عطيني = Donne-moi  
-• شحال = Combien
+• شحال = Combien (prix)
 • كاين = Disponible
 • واش كاين = Est-ce qu'il y a
 • بزاف = Beaucoup
-• شوية = Un peu`;
+• شوية = Un peu
+• زين = Bon/D'accord
+• بركا = Assez/Ça suffit
+
+FORMATS:
+• القرعة الصغيرة = Petite bouteille (33cl)
+• القرعة الكبيرة = Grande bouteille (1L+)
+• الكانيت = Canette
+• البلاستيك = Bouteille plastique
+
+LIVRAISON:
+• التوصيل = Livraison
+• فين التوصيل؟ = Où livrer?
+• فوقاش يوصل؟ = Quand ça arrive?`;
     }
 
     private getContextResource(): string {
         return `=== CONTEXTE ECCBC ===
 
-MISSION: B2B embouteilleur Coca-Cola Maroc
-- Vente aux commerçants via WhatsApp
-- Support multilingue (FR/AR/EN)
-- Livraison 24-48h partout au Maroc
+MISSION:
+- Distributeur officiel Coca-Cola Maroc B2B
+- Vente aux commerçants/détaillants via WhatsApp
+- Support multilingue (Français/Arabe/Anglais)
+- Couverture nationale avec livraison 24-48h
 
-PROCESSUS:
-1. Client exprime besoin librement
-2. Clarification si nécessaire  
-3. Vérification stock temps réel
-4. Confirmation prix/délai
-5. Création commande automatique
+GAMME DE PRODUITS:
+- Boissons gazeuses: Coca-Cola, Fanta, Sprite
+- Formats: 33cl, 50cl, 1L, 1.5L, 2L
+- Conditionnement: Caisses de 6, 12, 24 unités
+- Prix dégressifs selon volume
 
-UNITÉS: Caisses de 6/12/24, Prix en MAD
-FORMATS: 33cl, 50cl, 1L, 1.5L
+PROCESSUS DE VENTE:
+1. Réception demande client (WhatsApp)
+2. Analyse du besoin en langue du client
+3. Recherche produits demandés
+4. Vérification stock temps réel
+5. Calcul prix et conditions
+6. Confirmation commande
+7. Création ordre automatique
+8. Suivi livraison
 
-TONE: Professionnel, chaleureux, respecter langue client`;
+POLITIQUE COMMERCIALE:
+- Commande minimum: 1 caisse
+- Paiement: 30 jours net (clients établis)
+- Livraison gratuite > 500 MAD
+- Remises quantité disponibles
+- Service client 6j/7
+
+ZONES DE LIVRAISON:
+- Casablanca/Rabat: 24h
+- Autres villes principales: 48h
+- Zones rurales: 72h
+- Frais transport selon distance
+
+COMMUNICATION:
+- Ton professionnel mais chaleureux
+- Respecter la langue du client
+- Clarifier si demande ambiguë
+- Proposer alternatives si rupture
+- Confirmer tous les détails`;
     }
 
     async run() {
